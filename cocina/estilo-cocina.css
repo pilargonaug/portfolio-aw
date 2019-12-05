@@ -1,0 +1,39 @@
+/* este es el estilo de mi página de recetas */
+body {background-image:url("imagenes/fondo.jpg");
+      background-size:200px 200px;
+      padding:0;}
+#wrapper {width:80%;
+          height:600px;
+          overflow:auto; /* por si no cabe el contenido de texto */
+          background-color:white;
+          margin:auto;
+          padding:1vw;
+          border:1px solid black;}
+ul {list-style-image:url("imagenes/huevo.png");}
+h1 {text-align:center;
+    color:rgb(231, 93, 50);
+    }
+h2 {color:rgb(29, 99, 29);
+    border-left:3px solid rgb(231, 93, 50);
+    border-bottom:1px solid rgb(231, 93, 50);
+    padding:5px;
+    display:inline-block;}
+dt {font-weight:bold;
+    color:rgb(231, 93, 50);}
+table {border:2px solid rgb(231, 93, 50);
+       border-collapse:collapse;}
+td, th {border:1px solid black;
+        padding:10px;}
+tr:hover {background-color: silver;}
+td {text-align:center;}
+iframe {display:block;
+       /* margin:auto;*/
+        float:right;}
+
+/* vamos a utilizar un recurso llamado media query 
+   que trata de incluir una especie de "if" y una 
+   condición para que cambie algo en el estilo cuando
+   tengo una pantalla pequeña */
+@media only screen and (max-width:500px){
+    #wrapper {width:100%;}
+}
